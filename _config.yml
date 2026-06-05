@@ -14,9 +14,10 @@ author:
   avatar: "/assets/images/profile.png"
   bio: "Ph.D. Student in Computer Science, Florida International University"
   location: "Miami, FL, USA"
-  email: "mailto:jshen020@fiu.edu"
+  cv: "/assets/files/JingzhouShen_CV.pdf"
+  email: "jshen020@fiu.edu"
   github: "https://github.com/NorahCadeJS"
-  linkedIn: "https://www.linkedin.com/in/jscade/"
+  linkedin: "https://www.linkedin.com/in/jscade/"
   google_scholar: "https://scholar.google.com/citations?user=EiJF8fYAAAAJ&hl=zh-CN"
       
 
