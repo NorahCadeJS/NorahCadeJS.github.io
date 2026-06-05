@@ -14,12 +14,26 @@ author:
   avatar: "/assets/images/profile.png"
   bio: "Ph.D. Student in Computer Science, Florida International University"
   location: "Miami, FL, USA"
-  employer: "Florida International University"
-  email: "jshen020@fiu.edu"
-  github: "NorahCadeJS"
-  linkedin: "https://www.linkedin.com/in/jscade/"
-  google_scholar: "https://scholar.google.com/citations?user=EiJF8fYAAAAJ&hl=zh-CN"
-  cv: "/assets/files/JingzhouShen_CV.pdf"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jshen020@fiu.edu"
+
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/NorahCadeJS"
+
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jscade/"
+
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square ai-fw"
+      url: "https://scholar.google.com/citations?user=EiJF8fYAAAAJ&hl=zh-CN"
+
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/files/JingzhouShen_CV.pdf"
 
 # Build settings
 markdown: kramdown
