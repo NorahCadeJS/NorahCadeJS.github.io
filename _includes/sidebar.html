@@ -5,23 +5,25 @@
   <p>{{ site.author.bio }}</p>
   <p class="muted">{{ site.author.employer }}<br>{{ site.author.location }}</p>
 
-  {% if site.author.links %}
-    <div class="author-links">
-      {% for link in site.author.links %}
-        <p>
-          {% if link.url contains 'http' or link.url contains 'mailto:' %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              {{ link.label }}
-            </a>
-          {% else %}
-            <a href="{{ link.url | relative_url }}">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              {{ link.label }}
-            </a>
-          {% endif %}
-        </p>
-      {% endfor %}
-    </div>
-  {% endif %}
+  <div class="author-links">
+    {% if site.author.email %}
+      <p><a href="{{ site.author.email }}">Email</a></p>
+    {% endif %}
+
+    {% if site.author.cv %}
+      <p><a href="{{ site.author.cv | relative_url }}">CV</a></p>
+    {% endif %}
+
+    {% if site.author.github %}
+      <p><a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></p>
+    {% endif %}
+
+    {% if site.author.linkedin %}
+      <p><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></p>
+    {% endif %}
+
+    {% if site.author.google_scholar %}
+      <p><a href="{{ site.author.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></p>
+    {% endif %}
+  </div>
 </aside>
