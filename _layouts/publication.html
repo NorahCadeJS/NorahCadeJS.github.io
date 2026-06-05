@@ -1,0 +1,12 @@
+---
+layout: page
+---
+<p class="pub-meta"><strong>{{ page.venue }}</strong>{% if page.status %} <span class="status">{{ page.status }}</span>{% endif %}</p>
+<p class="pub-authors">{{ page.authors }}</p>
+{{ content }}
+{% if page.links %}
+<h2>Links</h2>
+<ul>
+{% for link in page.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+</ul>
+{% endif %}

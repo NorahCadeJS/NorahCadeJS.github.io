@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-profile">
+      <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar">
+      <h1>{{ site.author.name }}</h1>
+      <p class="subtitle">{{ site.author.bio }}</p>
+      <p class="muted">{{ site.author.location }}</p>
+      <div class="hero-links">
+        <a class="button" href="mailto:{{ site.author.email }}">Email</a>
+        <a class="button outline" href="{{ site.author.cv | relative_url }}">CV</a>
+        <a class="button outline" href="https://github.com/{{ site.author.github }}">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-text">
+      {{ content }}
+    </div>
+  </div>
+</section>
+<section class="container two-column">
+  <div class="card">
+    <h2>Research Interests</h2>
+    <div class="tag-list">
+      {% for item in site.data.profile.research_interests %}<span>{{ item }}</span>{% endfor %}
+    </div>
+  </div>
+  <div class="card">
+    <h2>Selected Highlights</h2>
+    <ul class="compact-list">
+      <li>Ph.D. student in Computer Science at Florida International University.</li>
+      <li>Research at the intersection of 3D vision, wireless sensing, Physical AI, digital twins, and world models.</li>
+      <li>Publications and submissions across CVPR, INFOCOM, MASS, IMWUT, SenSys, IEEE TMC, and IEEE JSAC.</li>
+    </ul>
+  </div>
+</section>
+<section class="container card">
+  <div class="section-heading">
+    <h2>Publications</h2>
+    <a href="{{ '/publications/' | relative_url }}">View all</a>
+  </div>
+  {% assign pubs = site.publications | sort: 'date' | reverse %}
+  {% for pub in pubs limit: 5 %}
+    {% include publication-card.html pub=pub %}
+  {% endfor %}
+</section>

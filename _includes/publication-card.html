@@ -1,0 +1,6 @@
+<article class="publication">
+  <h3><a href="{{ include.pub.url | relative_url }}">{{ include.pub.title }}</a></h3>
+  <p class="pub-authors">{{ include.pub.authors }}</p>
+  <p class="pub-venue">{{ include.pub.venue }}{% if include.pub.status %}<span class="status">{{ include.pub.status }}</span>{% endif %}</p>
+  {% if include.pub.excerpt %}<p>{{ include.pub.excerpt | strip_html }}</p>{% endif %}
+</article>

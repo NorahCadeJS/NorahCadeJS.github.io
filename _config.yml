@@ -1,0 +1,65 @@
+# Site settings
+locale: "en-US"
+title: "Jingzhou Shen"
+title_separator: "-"
+name: "Jingzhou Shen"
+description: "Ph.D. student in Computer Science at Florida International University. Research in 3D vision for wireless fields, Physical AI, digital twins, and world models."
+url: "https://NorahCadeJS.github.io"
+baseurl: ""
+repository: "NorahCadeJS/NorahCadeJS.github.io"
+
+# Author profile
+author:
+  name: "Jingzhou Shen"
+  avatar: "/assets/images/avatar-placeholder.svg"
+  bio: "Ph.D. Student in Computer Science, Florida International University"
+  location: "Miami, FL, USA"
+  employer: "Florida International University"
+  email: "jshen020@fiu.edu"
+  github: "NorahCadeJS"
+  linkedin: ""
+  google_scholar: ""
+  cv: "/assets/files/JingzhouShen_CV.pdf"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+timezone: America/New_York
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: publication
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - scripts
