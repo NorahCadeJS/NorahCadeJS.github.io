@@ -64,3 +64,18 @@ h3 { font-size: 1.1rem; margin-bottom: 6px; }
   .nav-toggle { display: inline-flex; }
   .status { float: none; display: block; margin-left: 0; }
 }
+.author-links p {
+  margin: 0.35rem 0;
+}
+
+.author-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+}
+
+.author-links i {
+  width: 1.1rem;
+  text-align: center;
+}
