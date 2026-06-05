@@ -1,8 +1,21 @@
 <aside class="sidebar card">
   <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar small">
+
   <h2>{{ site.author.name }}</h2>
   <p>{{ site.author.bio }}</p>
   <p class="muted">{{ site.author.employer }}<br>{{ site.author.location }}</p>
-  <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-  <p><a href="{{ site.author.cv | relative_url }}">Download CV</a></p>
+
+  {% if site.author.links %}
+    <div class="author-links">
+      {% for link in site.author.links %}
+        <p>
+          {% if link.url contains 'http' or link.url contains 'mailto:' %}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+          {% else %}
+            <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+          {% endif %}
+        </p>
+      {% endfor %}
+    </div>
+  {% endif %}
 </aside>
