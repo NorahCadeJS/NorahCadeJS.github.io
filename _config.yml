@@ -11,14 +11,14 @@ repository: "NorahCadeJS/NorahCadeJS.github.io"
 # Author profile
 author:
   name: "Jingzhou Shen"
-  avatar: "/assets/images/avatar-placeholder.svg"
+  avatar: "/assets/images/profile.png"
   bio: "Ph.D. Student in Computer Science, Florida International University"
   location: "Miami, FL, USA"
   employer: "Florida International University"
   email: "jshen020@fiu.edu"
   github: "NorahCadeJS"
-  linkedin: ""
-  google_scholar: ""
+  linkedin: "https://www.linkedin.com/in/jscade/"
+  google_scholar: "https://scholar.google.com/citations?user=EiJF8fYAAAAJ&hl=zh-CN"
   cv: "/assets/files/JingzhouShen_CV.pdf"
 
 # Build settings
