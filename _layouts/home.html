@@ -43,7 +43,7 @@ layout: default
   </div>
 
   {% assign pubs = site.publications | sort: 'date' | reverse %}
-  {% assign selected_pubs = pubs | where_exp: "pub", "pub.venue contains 'CVPR 2026' or pub.venue contains 'INFOCOM 2026'" %}
+  {% assign selected_pubs = pubs | where: "selected", true %}
 
   {% for pub in selected_pubs %}
     {% include publication-card.html pub=pub %}
