@@ -7,19 +7,31 @@
 
   <div class="author-links">
     {% if site.author.email %}
-      <p><a href="{{ site.author.email }}">Email</a></p>
+      <a class="author-link-button" href="mailto:{{ site.author.email }}">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
     {% endif %}
 
     {% if site.author.github %}
-      <p><a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a></p>
+      <a class="author-link-button" href="{{ site.author.github }}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
     {% endif %}
 
     {% if site.author.linkedin %}
-      <p><a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></p>
+      <a class="author-link-button" href="{{ site.author.linkedin }}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
     {% endif %}
 
     {% if site.author.google_scholar %}
-      <p><a href="{{ site.author.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a></p>
+      <a class="author-link-button" href="{{ site.author.google_scholar }}" target="_blank" rel="noopener">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Google Scholar</span>
+      </a>
     {% endif %}
   </div>
 </aside>
