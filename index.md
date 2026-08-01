@@ -10,6 +10,10 @@ My research focuses on **3D vision for wireless field modeling**, **Physical AI*
 
 ## News
 
+- **[2026.07]** Two paper are submitted to INFOCOM 2027.
+
+- **[2026.07]** Two paper are submitted to AAAI 2027.
+
 - **[2026.05]** One paper is submitted to Sensys 2027.
 
 ## Beyond Research
