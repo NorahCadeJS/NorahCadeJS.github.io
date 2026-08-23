@@ -10,6 +10,8 @@ My research focuses on **3D vision for wireless field modeling**, **Physical AI*
 
 ## News
 
+- **[2026.08]** One paper is submitted to IEEE Transactions on Mobile Computing.
+
 - **[2026.07]** Two papers are submitted to IEEE INFOCOM 2027.
 
 - **[2026.07]** Two papers are submitted to AAAI 2027.
