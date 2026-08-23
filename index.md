@@ -18,6 +18,8 @@ My research focuses on **3D vision for wireless field modeling**, **Physical AI*
 
 - **[2026.05]** One paper is submitted to Sensys 2027.
 
+- **[2026.05]** One paper is submitted to IEEE Journal on Selected Areas in Communications
+
 ## Beyond Research
 I have diverse interests such as photography, movies, sports like tennis (UTR > 4.5), basketball, football (aka soccer), and music including piano and guitar. My favourite lyrics and my life quote is 'Live vertically, linger horizontally'. 
 
